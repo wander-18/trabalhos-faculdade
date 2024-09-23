@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Funcionários</title>
+    <title>Cadastro de Funcionários</title>
 </head>
 <body>
     <h1>Cadastro de Funcionários</h1>
-    
+
     <form id="form-funcionario">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br><br>
@@ -17,15 +17,20 @@
 
         <label for="cargo">Cargo:</label>
         <select id="cargo" name="cargo" required>
+            <option value="">Selecione um cargo</option>
             <option value="gerente">Gerente</option>
             <option value="desenvolvedor">Desenvolvedor</option>
         </select><br><br>
 
-        <label for="departamento">Departamento (Gerente):</label>
-        <input type="text" id="departamento" name="departamento"><br><br>
+        <div id="campo-departamento" style="display: none;">
+            <label for="departamento">Departamento (Gerente):</label>
+            <input type="text" id="departamento" name="departamento"><br><br>
+        </div>
 
-        <label for="linguagem">Linguagem de Programação (Desenvolvedor):</label>
-        <input type="text" id="linguagem" name="linguagem"><br><br>
+        <div id="campo-linguagem" style="display: none;">
+            <label for="linguagem">Linguagem de Programação (Desenvolvedor):</label>
+            <input type="text" id="linguagem" name="linguagem"><br><br>
+        </div>
 
         <button type="button" onclick="cadastrarFuncionario()">Cadastrar Funcionário</button>
     </form>
