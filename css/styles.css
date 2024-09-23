@@ -1,0 +1,9 @@
+.hero {
+    background: url('../img/car1.jpg') no-repeat center center/cover;
+    height: 80vh;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
